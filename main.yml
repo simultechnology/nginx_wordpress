@@ -1,0 +1,9 @@
+---
+- hosts: 127.0.0.1
+  sudo: yes
+
+  tasks:
+    - name: yum update
+      yum: name=* state=latest
+
+
