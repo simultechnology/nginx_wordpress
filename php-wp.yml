@@ -1,0 +1,11 @@
+---
+- name: Install WordPress and PHP-FPM
+  hosts: met
+  #remote_user: root
+  # remote_user: user
+  sudo: yes
+
+  roles:
+    - mysql
+    - php-fpm
+    - wordpress
